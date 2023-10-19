@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Isaac Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+
+    <div class="hero">
+        <!-- Aquí va el título de tu portafolio -->
+        <div class="container">
+            <div class="landing-label">
+                Carlos Isaac
+            </div>
+        </div>    
+    </div>
+    <nav class="navbar">
+        <div class="menu-toggle">
+            ☰
+        </div>
+        <ul>
+            <li><a href="projects/projects.html">Projects</a></li>
+            <li><a href="navbar/certifications/certifications.html">Certificates</a></li>
+            <li><a href="navbar/cv/cv.html">Curriculum</a></li>
+            <li><a href="navbar/contact/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Section -->
+    <div class="introduction">
+        <div class="intro-container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>On this page, you'll discover a showcase of my skills and projects in the field of data science. You'll also find my certifications that validate my expertise and knowledge in various areas. If you're interested in learning more about my professional journey, I invite you to visit my curriculum. And if you wish to get in touch with me, please do so through the contact section.</p>
+        </div>
+    </div>
+    <!-- End of Introduction Section -->
+
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const navList = document.querySelector('.navbar ul');
+            if (navList.style.display === 'none' || navList.style.display === '') {
+                navList.style.display = 'block';
+                navList.style.maxHeight = navList.scrollHeight + 'px';
+            } else {
+                navList.style.display = 'none';
+                navList.style.maxHeight = null;
+            }
+        });
+    </script>
+    
+</body>
+</html>
+
+
+
